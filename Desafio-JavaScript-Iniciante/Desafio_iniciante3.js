@@ -5,10 +5,15 @@ Leia um valor inteiro X (1 <= X <= 1000). Em seguida mostre os Ã­mpares de 1 atÃ
 
 function impar(){
     let X = parseInt(gets());
-    let impar = 2 * i + 1    
-
-    for ( let i = 0 ; i <= X; i++) {
-    console.log(impar);
+    if( X >=1 && X <= 1000){
+      var impar = 0
+      
+      for ( let i = 0 ; (impar + 2) <= X; i++ ) {
+        impar = 2 * i + 1;
+        console.log(impar);
+      }
+    }else{
+      console.log("insira um inteiro de 1 a 1000:")
     }
 }
 
