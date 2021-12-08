@@ -4,7 +4,7 @@ function replacePair(array) {
 
     for(let i = 0; i < array.length; i++) {
         if(array[i] === 0) {
-            console.log("você já é zero!!");
+            console.log(`${i} você já é zero!!`);
         } else if (array[i] % 2 === 0) {
             console.log(`Substituindo ${array[i]} por 0...`);
             array[i] = 0;
@@ -13,7 +13,7 @@ function replacePair(array) {
     return array;
 }
 
-let array = [1, 3, 4, 6, 80, 33, 23, 90];
+let array = [1, 3, 0, 0, 55, 4, 6, 80, 33, 23, 90];
 
 
 console.log(replacePair(array))
